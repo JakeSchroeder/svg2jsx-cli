@@ -1,6 +1,6 @@
 Uses this https://github.com/balajmarius/svg2jsx/tree/master/packages/transform
 
-- `Transform SVG into valid JSX with typescript and tailwind syntax`
+- `Batch transform SVG into valid JSX with typescript and tailwind syntax (customizable in the future)`
 - `Perfect when you have 100s of icons in figma with no react package/support`
 
 ---
