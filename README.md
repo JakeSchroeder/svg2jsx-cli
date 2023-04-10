@@ -1,16 +1,25 @@
-# svg2jsx 🌜
+Based on https://github.com/balajmarius/svg2jsx/tree/master/packages/transform
 
-> Transform SVG into valid JSX
+`Transform SVG into valid JSX with typescript and tailwind syntax`
 
-#### transform(`svg`, `config`)
+```svg
+<svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path fill="currentColor" d="M13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523"/>
+</svg>
+```
 
-#### Parameters
+```jsx
+const VerticalDot: FC<{ className: string }> = ({ className }) => (
+  <svg className={className} width="24" height="24" fill="none" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523" />
+  </svg>
+);
+```
 
-- **svg** `String` The SVG string to be transformed
-- **_config_** `Map`
-  - **type** `functional | class` The type of the resulting component
-  - **jsxSingleQuote** `Boolean` Either double or single quotes in JSX attributes
+## Usage:
 
-#### Returns
+> node ./index.js
 
-`Promise<String>` JSX string
+> src path (absolute): `example: /Users/usr/Downloads/icon-pack/svgs`
+
+> output file (absolute): `example: /Users/jake/Desktop/icon-pack.tsx`
