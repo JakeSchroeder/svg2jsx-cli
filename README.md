@@ -32,6 +32,8 @@ const VerticalDot: FC<{ className: string }> = ({ className }) => (
 
 > output file (absolute): `example: /Users/me/Desktop/icon-pack.tsx`
 
+---
+
 ```
 caveats:
 - file names must able to be converted into JS function names (a-Z, cant start with numbers, etc)
