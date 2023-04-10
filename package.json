@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "@svg2jsx/transform",
+  "name": "svg2jsx-cli",
   "version": "2.0.1",
-  "description": "The svg2jsx transformer",
+  "description": "svg2jsx transformer cli",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {

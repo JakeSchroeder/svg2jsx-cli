@@ -1,3 +1,7 @@
+// Author: Jake Schroeder
+// Based on: https://github.com/balajmarius/svg2jsx/tree/master/packages/transform
+// License: MIT
+
 const fs = require("fs");
 const rl = require("readline");
 const path = require("path");
@@ -37,7 +41,7 @@ async function main() {
     readline.question("output file (absolute):", async (userInput) => {
       outputPath = userInput;
       readline.write("processing...");
-      let bufferForOutput = "";
+      let bufferForOutput = "import { FC } from 'react';";
       const files = fs.readdirSync(pathToSvgs);
       await Promise.all(
         files.map(async (file) => {
