@@ -31,3 +31,10 @@ const VerticalDot: FC<{ className: string }> = ({ className }) => (
 > src path (absolute): `example: /Users/me/Downloads/icon-pack/svgs`
 
 > output file (absolute): `example: /Users/me/Desktop/icon-pack.tsx`
+
+```
+caveats:
+- file names must able to be converted into JS function names (a-Z, cant start with numbers, etc)
+- the className attributes are hardcoded (but very easy to change in the source)
+- the syntax is for .tsx with a tailwind className props enforced with ts... thats also hardcoded 0_o
+```
