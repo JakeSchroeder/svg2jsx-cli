@@ -1,6 +1,7 @@
 Based on https://github.com/balajmarius/svg2jsx/tree/master/packages/transform
 
-`Transform SVG into valid JSX with typescript and tailwind syntax`
+- `Transform SVG into valid JSX with typescript and tailwind syntax`
+- `Perfect when you have 100s of icons in figma with no react package/support`
 
 ```svg
 <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -20,6 +21,6 @@ const VerticalDot: FC<{ className: string }> = ({ className }) => (
 
 > node ./index.js
 
-> src path (absolute): `example: /Users/usr/Downloads/icon-pack/svgs`
+> src path (absolute): `example: /Users/me/Downloads/icon-pack/svgs`
 
-> output file (absolute): `example: /Users/jake/Desktop/icon-pack.tsx`
+> output file (absolute): `example: /Users/me/Desktop/icon-pack.tsx`
