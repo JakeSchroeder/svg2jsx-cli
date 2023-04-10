@@ -33,10 +33,8 @@ let outputPath = "";
 
 async function main() {
   readline.question("src path (absolute):", (userInput) => {
-    // /Users/jake/Downloads/iconic-pro/svgs
     pathToSvgs = userInput;
     readline.question("output file (absolute):", async (userInput) => {
-      // /Users/jake/Desktop/icons.tsx
       outputPath = userInput;
       readline.write("processing...");
       let bufferForOutput = "";
